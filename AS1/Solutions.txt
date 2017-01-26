@@ -1,0 +1,11 @@
+Solutions
+
+Problem 2:
+(a) 5.
+(b) 	1. Illegal
+	2. Legal
+	3. Illegal
+	4. Illegal
+	5. Legal
+	6. Illegal
+(c) 

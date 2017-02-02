@@ -7,5 +7,5 @@ compose :: Eq b => (BinaryRelation a b) -> (BinaryRelation b c) -> (BinaryRelati
 
 project1 rels = [fst x | x <- rels]
 project2 rels = [snd x | x <- rels]
-select pred rel = rel
+select pred rel = [x | x <- rel, pred ((fst x), (snd x))]
 compose rel1 rel2 = [(fst x, snd y)| x <- rel1, y <- rel2, snd x == fst y ]

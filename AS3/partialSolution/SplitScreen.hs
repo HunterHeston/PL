@@ -14,11 +14,11 @@ module SplitScreen where
 
    caseHorizontal :: String -> [WindowLayout] -> [WindowLayout]
    caseHorizontal _ [] = []
-   caseHorizontal name xs = splitScreen name (head xs) : caseHorizontal name (tail xs)
+   caseHorizontal name (x:xs) = splitScreen name x : caseHorizontal name xs
 
    caseVertical :: String -> [WindowLayout] -> [WindowLayout]
    caseVertical _ [] = []
-   caseVertical name xs = splitScreen name (head xs) : caseVertical name (tail xs)
+   caseVertical name (x:xs) = splitScreen name x : caseVertical name xs
 
 
 

@@ -17,7 +17,7 @@ module Rank where
    tie (x:[]) rank tieCount = [(rank, x)]
    tie (x:xs) rank tieCount = if x == (head xs)
                               then (rank, x) : (tie xs rank (tieCount+1) )
-                              else (rank, x) : (setRanks xs (rank + tieCount+1))
+                              else (rank, x) : (setRanks xs (rank + tieCount + 1))
 
 
    sort :: (Ord a) => [a] -> [a]

@@ -6,10 +6,17 @@
 
 substaddr(SD, New, Old) -> 
 	case SD of
-		{store, {Old, X}} ->
-			{store, {New, X}};
-		{group, {Y, X}} ->
-			{group, {Y, lists:map(fun substaddr/3(New, Old), X)}};
+		#store{address=Old, amounts=X} ->
+			#store{address=New, amounts=X};
+		#group{gname=Y, members=X} ->
+			#group{gname=Y, members=helper(X, New, Old)};
 		_ ->
 			SD
-	end. 
+	end.
+helper(LS, New, Old) -> 
+	case LS of
+		[] ->
+			[];
+		_ ->
+			[substaddr(hd(LS), New, Old)] ++ helper(tl(LS), New, Old)
+	end.

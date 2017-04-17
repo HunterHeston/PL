@@ -2,7 +2,7 @@
 -export([start/1]).
 
 start(Value) ->
-	spawn(fun server/1(Value)).
+	spawn(server(Value)).
 
 server(Value) ->
 	receive

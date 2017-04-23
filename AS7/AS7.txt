@@ -1,0 +1,18 @@
+1. 	a) {G, foo, length, X}
+	b) {}
+
+2.	a) {foo, bar, plus, I, J}
+	b) {Y, A}
+
+3.	a) Statically 
+4.
+5.	a) Dynamic
+	b) Static
+	c) cat + 5
+	d) Dynamic 
+	e) 5 + “hello”
+	f) Yes, Erlang is dynamically typed. 
+	g) No, Haskell has static type inference. 
+6.
+7.
+

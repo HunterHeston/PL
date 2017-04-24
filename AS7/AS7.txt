@@ -5,7 +5,7 @@
 	b) {Y, A}
 
 3.	a) Statically 
-4.
+4.	Exceptions are handled dynamically.
 5.	a) Dynamic
 	b) Static
 	c) cat + 5

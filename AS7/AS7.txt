@@ -1,5 +1,5 @@
-1. 	a) {G, foo, length, X}
-	b) {}
+1. 	a) {G, foo, length}
+	b) {X}
 
 2.	a) {foo, bar, plus, I, J}
 	b) {Y, A}
